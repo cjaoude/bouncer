@@ -93,6 +93,9 @@ When you check abilities at Laravel's gate, the bouncer will automatically be co
 
 ```
 $ composer require silber/bouncer v1.0.0-rc.10
+
+// or with @RC stability flag for composer updates
+$ composer require silber/bouncer v1.0.*@RC
 ```
 
 2) Add Bouncer's trait to your user model:
@@ -124,6 +127,9 @@ Whenever you use the `Bouncer` facade in your code, remember to add this line to
 
 ```php
 use Bouncer;
+
+// or for IDE Intellisense support
+use Silber\Bouncer\BouncerFacade as Bouncer;
 ```
 
 For more information about Laravel Facades, refer to [the Laravel documentation](https://laravel.com/docs/7.x/facades).
